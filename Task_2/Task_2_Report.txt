@@ -1,0 +1,5 @@
+DEPT_NAME      AVG_MONTHLY_SALARY (USD)
+----------------------------------------
+Sales          7045.16 (USD)
+Ops            6420.00 (USD)
+Finance        6360.32 (USD)

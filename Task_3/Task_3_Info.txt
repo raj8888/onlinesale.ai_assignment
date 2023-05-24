@@ -1,0 +1,40 @@
+==> Explanation of Corrections:
+
+- In the second condition (elif), the range of the factorial calculation was incorrect. The loop should iterate from 1 to (n-9) instead of (n-10). This ensures that the factorial calculation includes the number (n-10) in the range.
+
+- In the third condition (else), the calculation of the sum of integers between 1 and (n-20) was incorrect. Instead of calculating the square of (n-20) and subtracting (n-20) from it, we can directly use the sum() function with the range from 1 to (n-20) inclusive.
+
+
+==> Assumptions:
+    - Input Validation: The script assumes that the input provided by the user is an integer. 
+    - Inclusive Ranges: The script assumes that the conditions for the ranges are inclusive. 
+    - Expected Output Format: The script assumes that printing the output to the console using the print() function is sufficient for the desired functionality. 
+    - Efficiency and Large Inputs: The script assumes that the input values are within a reasonable range and that the computation can be performed efficiently. It does not include explicit checks for extremely large inputs or optimization techniques for handling large factorials or sum calculations. 
+
+
+==> Test Cases:
+
+1:Test Case: n < 10
+    - Input: n = 4
+    - Expected Output: 16
+    - Explanation: The input value is less than 10, so the script should calculate the square of the input, resulting in 16.
+
+2.Test Case: 10 <= n < 20
+    - Input: n = 15
+    - Expected Output: 120
+    - Explanation: The input value is between 10 and 20 (inclusive), so the script should calculate the factorial of (n-10), which is 5! = 120.
+
+3.Test Case: n >= 20
+    - Input: n = 25
+    - Expected Output: 15
+    - Explanation: The input value is greater than or equal to 20, so the script should calculate the sum of integers between 1 and (n-20), which is the sum of 1 + 2 + 3 + 4 + 5 = 15.
+
+4.Test Case: n = 10
+    - Input: n = 10
+    - Expected Output: 1
+    - Explanation: The input value is exactly 10, so the script should calculate the factorial of (n-10), which is 0! = 1.
+
+5.Test Case: n = 20
+    - Input: n = 20
+    - Expected Output: 0
+    - Explanation: The input value is exactly 20, which is not covered by any condition in the script. Therefore, the output should be 0.

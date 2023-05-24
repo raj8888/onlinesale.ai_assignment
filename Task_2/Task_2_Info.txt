@@ -1,0 +1,71 @@
+==> Instructions to run the code:
+- Save the script to a Python file, e.g., "Task_2.py".
+- Create directory called the Data to store all yours data.
+- Place the CSV files ("Departments.csv", "Employees.csv", and "Salaries.csv") in the Data directory as the Python script.
+- Open a terminal or command prompt and navigate to the directory where the Python script is located.
+- Run the script by executing the following command: 
+python Task_2.py
+- The script will read the CSV files, calculate the average monthly salary for each department, and write the report to a file named "report.txt" in the same directory.
+
+
+==> Assumptions:
+- CSV File Format: The script assumes that the CSV files follow a standard format with comma-separated values and have the expected columns.
+- Encoding: The script assumes that the CSV files use a standard encoding, such as UTF-8.
+- File Locations: The script assumes that the CSV files ("Departments.csv", "Employees.csv", and "Salaries.csv") are present in the Data directory as the script.\
+- One-to-One Relationships: The script assumes a one-to-one relationship between employees and salaries based on the "EMP_ID" column. Each employee should have a corresponding salary entry in the Salaries.csv file.
+- Numeric Salary Values: The script assumes that the values in the "AMT" column of the Salaries.csv file represent valid numeric values.
+
+==> Test Case:
+
+1. Test Case 1:
+
+- Departments.csv:
+ID   NAME
+1   Finance
+2   Engineering
+3   Marketing
+4   Human Resources
+
+- Employees.csv:
+ID      NAME    DEPT_ID
+1       Chunnu     1
+2       Munnu      2
+3       Dev        1
+4       Niharika   3
+5       Jade       2
+6       Mice       1
+
+- Employees.csv:
+EMP_ID  MONTH       AMT
+1       202201      5000
+2       202201      6000
+3       202201      4500
+4       202201      5500
+5       202201      6500
+6       202201      4000
+
+Sample Output:
+DEPT_NAME       AVG_MONTHLY_SALARY (USD)
+---------------------------------------------
+Engineering         6250.00 (USD)
+Finance             4500.00 (USD)
+Marketing           5500.00 (USD)
+
+
+
+Other Test Cases:
+
+1. Correct Input:
+    - Test case: The sample input files are provided correctly.
+    - The script should execute without errors and generate the "report.txt" file with the expected output.
+
+2. Error in Departments:
+    - Test case: The Employees.csv file has a department ID that does not exist in the Departments.csv file.
+    - Expected outcome: The script should handle the missing department gracefully and exclude it from the report.
+
+3. Empty Salaries:
+    - Test case: The Salaries.csv file is empty.
+    - Expected outcome: The script should handle the empty file gracefully and generate the report file with no departments and salaries.
+
+
+

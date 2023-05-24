@@ -1,0 +1,28 @@
+==> Instructions to run the SQL query:
+- Set up a relational database management system (MySQL) with the appropriate schema.
+- Import the provided data into the corresponding tables.
+- Execute the SQL query using a database client or command-line interface.
+
+==> Assumptions:
+- The database schema consists of three tables: Departments, Employees, and Salary.
+- The Departments table has columns ID (department ID) and NAME (department name).
+- The Employees table has columns ID (employee ID), NAME (employee name), and DEPT_ID (department ID).
+- The Salary table has columns EMP_ID (employee ID), MONTH (YYYYMM format), and AMT (salary amount in USD).
+
+==> Test Cases:
+
+- First Test Case: Verify the top 3 departments with their average monthly salaries are correctly fetched. (In Ascending Order)
+- Expected output:
+
+DEPT_NAME  AVG_MONTHLY_SALARY (USD)
+HR	          5273.6842
+IT	          5839.3939
+Finance	      6360.3175
+
+- Second Test Case:  Check if the departments are listed in descending order based on average monthly salary.
+- Expected output:
+
+DEPT_NAME  AVG_MONTHLY_SALARY (USD)
+Sales	      7045.1613
+Ops	          6420.0000
+Finance	      6360.3175
